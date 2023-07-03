@@ -15,4 +15,33 @@ print("Long form code result:")
 my_list = []
 for x in range(1,11):
    my_list.append(x*2)
+
 print(my_list)
+List comprehension result:
+[2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+Long form code result:
+[2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+
+List Comprehension with Conditional Statement
+### List Comprehension with Conditional Statement
+print("List comprehension result:")
+
+# The following list comprehension compacts multiple lines 
+# of code into one line:
+print([ x for x in range(1,101) if x % 10 == 0 ])
+
+### Long form for loop with nested if-statement
+print("Long form code result:")
+
+# The list comprehension above accomplishes the same result as
+# the long form version of the code:
+my_list = []
+for x in range(1,101):
+  if x % 10 == 0:
+    my_list.append(x)
+print(my_list)
+
+List comprehension result:
+[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+Long form code result:
+[10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
